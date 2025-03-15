@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Groups for Neurodiverse Individuals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            position: relative;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            background: #fff;
+            border-left: 5px solid #007bff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .toggle-btn {
+            display: block;
+            width: 100%;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            text-align: left;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .toggle-btn:hover {
+            background: #0056b3;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+        .home-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: #ff5733;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .home-button:hover {
+            background: #d94326;
+        }
+        .bottom-home {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            background: #ff5733;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .bottom-home:hover {
+            background: #d94326;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    
+    <h1>Support Groups for Neurodiverse Individuals</h1>
+    <p>Neurodiverse individuals thrive in supportive environments. Here are some groups that provide valuable resources and community support.</p>
+
+    <div class="section">
+        <button class="toggle-btn">What Do Support Groups Offer? ⬇</button>
+        <div class="content">
+            <ul>
+                <li><b>🛡️ Safe Space:</b> A judgment-free environment to express and connect.</li>
+                <li><b>🔗 Peer Support:</b> A place to share experiences and strategies.</li>
+                <li><b>📚 Skill-Building:</b> Learning social, emotional, and advocacy skills.</li>
+                <li><b>💞 Partner & Caregiver Support:</b> Help for those in neurodiverse relationships.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <button class="toggle-btn">Top Support Groups & Organizations ⬇</button>
+        <div class="content">
+            <ul>
+                <li><b>🌟 <a href="https://thendalliance.org/" target="_blank">Neurodiversity Alliance</a></b> - A student-led community.</li>
+                <li><b>👥 <a href="https://ishanyaindia.org/psg/" target="_blank">Peer-Support Group (Ishanya)</a></b> - Safe space for professionals.</li>
+                <li><b>🧩 <a href="https://www.soulup.in/products/autism-support-group" target="_blank">Autism Support (SoulUp)</a></b> - For autistic individuals.</li>
+                <li><b>📞 <a href="https://www.hertfordshire.gov.uk/" target="_blank">Neurodiversity Support Hub (UK)</a></b> - Offers guidance on ADHD and Autism.</li>
+                <li><b>💑 <a href="https://spectrumautism.org/" target="_blank">Neurodiverse Partner Support</a></b> - Support for relationships.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <button class="toggle-btn">🎵 Music & Neurodiversity ⬇</button>
+        <div class="content">
+            <p>Music can help neurodiverse individuals focus and relax. Popular genres include:</p>
+            <ul>
+                <li>🎼 Classical Music - Calm and structured.</li>
+                <li>🎥 Movie Soundtracks - Familiar and engaging.</li>
+                <li>🌊 Nature Sounds - Helps with stress relief.</li>
+                <li>🎧 8D Audio - A unique listening experience.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <button class="toggle-btn">🎶 Artists Loved by Neurodiverse Listeners ⬇</button>
+        <div class="content">
+            <ul>
+                <li>🎤 Billie Eilish - Deep, emotional music.</li>
+                <li>🎸 Mac Miller - Relaxing & thoughtful.</li>
+                <li>🎹 Elton John - Iconic melodies.</li>
+                <li>🎵 Electric Light Orchestra - Uplifting and rhythmic.</li>
+                <li>🎻 Nightwish - Orchestral and cinematic.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>💙 Need support? Find the right group for you! You're not alone. 💙</p>
+    </div>
+
+    <a href="index2.html" class="bottom-home">🏠 Back to Home</a>
+
+</div>
+
+<script>
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                this.textContent = this.textContent.replace("⬆", "⬇");
+            } else {
+                content.style.display = "block";
+                this.textContent = this.textContent.replace("⬇", "⬆");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
